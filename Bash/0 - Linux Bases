@@ -1,0 +1,131 @@
+#!/bin/bash
+
+#---------------
+# LINUX BASES
+#---------------
+
+## THE CD
+
+# If you have directory, you can navigate into them using the command : cd DIRECTORY
+
+# Example :
+
+cd example
+
+# Explanations : 
+
+# You are now into the example folder and can execute, read ... all you want into the folder
+
+#------------------------------------------------------------------------------------------
+
+## THE ./ 
+
+# To execute scripts or programs you can use : ./SCRIPT
+
+# Example : 
+
+./EXAMPLE.sh
+
+#------------------------------------------------------------------------------------------
+
+## THE LS
+
+# You can see all the folder and the files from your current folder by using : ls <argument>
+# ARGUMENTS : 
+# -l long format, displaying Unix file types, permissions, number of hard links, owner, group, size, last-modified date and filename
+# -f do not sort. Useful for directories containing large numbers of files
+# -F appends a character revealing the nature of a file, for example, * for an executable, or / for a directory
+# -a lists all files in the given directory, including those whose names start with "."
+# -R recursively lists subdirectories. The command ls -R / would therefore list all files
+# -d shows information about a symbolic link or directory, rather than about the link's target or listing the contents of a directory
+# -t sort the list of files by modification time
+
+# Example : 
+
+ls -l
+
+# Output : 
+
+drwxr--r--   1 fred  editors   4096  example
+-rw-r--r--   1 fred  editors  30405  EXAMPLE.sh
+
+#------------------------------------------------------------------------------------------
+
+## THE CHMOD
+
+# On linux you have differents types of users : 
+# u : user
+# g : group
+# o : other
+
+# You can remove certain rights or add some to certain users
+# On specific file or folders by using the command : chmod
+
+# Example :
+
+chmod u=rwx,g=rx,o=r FILE
+
+# Explanations : 
+
+# r : read the file
+# w : write on the file
+# x : execute the file
+
+# The order is very important : RWX
+# The user can read, write, and execute it
+# Members of your group can read and execute it
+# Others may only read it
+
+#------------------------------------------------------------------------------------------
+
+# You can also add by adding them
+
+# Example :
+
+chmod +x FILE
+
+# Explanations : 
+
+# You added the execution right to the user on the FILE
+
+#------------------------------------------------------------------------------------------
+
+# But it's to long to write so you have others methods
+# You have the octal notation : 
+# 4 : read
+# 2 : write
+# 1 : execute
+# 0 : no permission
+
+# Example :
+
+chmod 754 FILE
+
+# Explanations : 
+
+# 7 : User can read, write, execute the file
+# 5 : Group can read, execute the file
+# 4 : Other can read only the file
+
+#------------------------------------------------------------------------------------------
+
+## THE RM
+
+# To delete a file you can use the : rm FILE
+# But you can also delete folders with it : rm -r Folder
+
+#------------------------------------------------------------------------------------------
+
+## THE CP
+
+# To copy a file you can use the : cp FILE DESTINANTION
+
+# Example :
+
+cp example.sh /bin/
+
+# Explanations : 
+
+# Your file example.sh has been copied into the /bin/ folder
+
+#------------------------------------------------------------------------------------------
