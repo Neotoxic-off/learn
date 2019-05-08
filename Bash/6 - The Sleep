@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#---------------
+# THE SLEEP
+#---------------
+
+# You can have some little or long pauses, it's in general useless but you can use it anyway
+# The command sleep is realy easy to use
+
+# Example : 
+
+i=5;
+
+sleep $i
+
+# By default if you don't precise, it will be a time is seconds
+# Other time to use :
+# ms : millisec
+# s : sec
+# m : min
+# h : hours
+# You can manipulate the variables, to increase or decrease the sleep time
+
+# Example :
+
+sec='5s';
+hour='5h';
+min='15m';
+
+sleep $sec
+sleep $min
+sleep $hour
