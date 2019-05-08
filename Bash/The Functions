@@ -1,0 +1,77 @@
+#!/bin/bash
+
+#---------------
+# THE FUNCTIONS
+#---------------
+
+# To create a function you just have to choose a name and add () next
+
+# Example : 
+
+example(){
+    # CONTENT OF YOUR FUNCTION
+}
+
+# BUT YOU MUST CALL HERE OR SHE WON T BE USED
+# To do that just write her name 
+
+example
+
+# That's it !
+
+#------------------------------------------------------------------------------------------
+
+# Example :
+
+missing(){
+  printf "ERROR MISSING ARGUMENTS\n"
+  exit
+}
+
+missing
+
+# Output : 
+
+ERROR MISSING ARGUMENTS
+# Exiting the script
+
+#------------------------------------------------------------------------------------------
+
+# Now you can add arguments for complex script
+# ./example.sh 1 0
+# The 1 and the 0 are 2 arguments
+
+# How to use them ?
+# $1 is your first argument
+# $2 your second argument
+# You can add all the argument that you want by adding them next your function
+
+# Example :
+
+./example testing arguments
+
+missing(){
+  printf "ERROR MISSING ARGUMENTS\n"
+  exit
+}
+
+enable(){
+    printf "Argument 1 = $1\n" 
+    printf "Argument 2 = $2\n" 
+}
+
+main(){
+  if [[ -z $1 ]]; then
+    missing
+  else
+    enable $1 $2
+  fi
+}
+
+main $1 $2
+# Output 
+
+Argument 1 = testing
+Argument 2 = arguments
+
+#------------------------------------------------------------------------------------------

@@ -1,0 +1,84 @@
+#!/bin/bash
+
+#---------------
+# THE VARIABLES
+#---------------
+
+# To Declare a variable, first you must choose if it's a number or not
+# If you use a simple character you must use the '' else you use the "" for the string
+
+character='A';
+string="qwerty";
+number=123;
+
+# Now we have initialisated 3 variables, and we can use them and manipulate them
+
+#------------------------------------------------------------------------------------------
+
+# The PRINTF if a command wich can print lines on your screen 
+# You can printf all you want
+
+printf "QWERTY"
+
+#------------------------------------------------------------------------------------------
+
+# To call a variable, and print her content you must use : $NAME_OF_THE_VARIABLE
+
+# Example :
+
+printf "$character"
+printf "$string"
+printf "$number"
+
+# If you try this, the output will be : Aqwerty123
+# If you want all of that separated, ypou must use the : \n
+# \n means return at the line
+
+printf "$character\n"
+printf "$string\n"
+printf "$number\n"
+
+# Output : A
+#          qwerty
+#          123
+
+#------------------------------------------------------------------------------------------
+
+# If you want to change the content of a variable, you can edit on the top
+# But if you want a line with the character A and at the next line a B with only one variable
+# You can change the variable's content
+
+# Example : 
+
+printf "$character\n"
+character='B';
+printf "$character\n"
+
+# Output : A
+#          B
+
+#------------------------------------------------------------------------------------------
+
+# COMPLEX PART
+
+# You know how to redirect a text into a file
+# Now let's redirect a file content into a variable ...
+
+echo "Trying the redirection" > example.txt
+
+storage="$(cat example.txt)";
+
+printf "$storage\n"
+
+# You can save all you want into your variable, just use the command
+
+#------------------------------------------------------------------------------------------
+
+# You can set the input by user into a variable, to let the choice for example
+# Using : read choice
+
+read variable
+
+# You can call the variable as you want
+
+#------------------------------------------------------------------------------------------
