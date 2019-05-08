@@ -1,4 +1,4 @@
-# BASHIT
+# BASH
 
 ![](https://img.shields.io/badge/Free%20Course-red.svg)
 
@@ -18,6 +18,3 @@
 
 
 *Author : Neotoxic*
-
-
-![](https://static1.squarespace.com/static/532b290de4b0eaed9ab559ae/t/5a737a134192020b71e8f3b9/1553117779995/LearnMore-01.png)
