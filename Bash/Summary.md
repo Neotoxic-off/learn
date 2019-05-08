@@ -14,6 +14,13 @@
 * **The IF** : Learn how to check the equality [ *if* / *else* ]
 * **The WHILE** : Learn how to use the While and create loops [ *while* / *++* / *--* ]
 * **The Functions** : Use the functions and the arguments to get a clear code [ *functions()* / *$1* *$2* ]
+
+# Functions
+
+* **The Sleep** : Create some sleep time [ *sleep* ]
+
+# Projects
+
 * **Installer** : Create an installer for your programm [ */bin* ]
 
 
