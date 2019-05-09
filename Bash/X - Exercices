@@ -1,0 +1,29 @@
+#---------------
+# EXERCICES
+#---------------
+
+# Exercice 1 : Count down
+
+# Tools required : 
+
+# Clear function
+# 2 functions MAX
+# Sleep command
+# Exit command
+
+# Create a countdown where the user enter a Argument
+# For time where start the countdown in minuts
+# And when the countdown is on 0, the program print EXIT and exit the program
+
+# Example : 
+
+./countdown.sh 9
+
+9:00
+8:59
+...
+0:01
+
+EXIT
+
+#------------------------------------------------------------------------------------------
