@@ -36,6 +36,7 @@ installer(){
                 printf "Updating\n"
 
                 # Removing the old file
+                # And copying it on the bin folder
                 sudo rm /bin/$1
                 cp $1 /bin/
             else
